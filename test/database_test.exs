@@ -10,7 +10,6 @@ defmodule DatabaseTest do
     setup_all do
         ComfyCouch.start
         Database.delete!(@db)
-        {:ok, _} = Database.use_or_create(@db)
         :ok 
     end
 
