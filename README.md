@@ -18,11 +18,15 @@ Initially, I created some macros to make a little DSL for a couch client:
   end
 ```
 
-This quickly became harder than it needed to be, so I settled on the lazy approach:
+It sort of worked... but quickly became harder than it needed to be, so I settled on the lazy approach:
 
 ``` 
+  # Create a new, or open and existing DB
   {:ok, _} = Database.use_or_create("sampledb")
+
+  # Create a new document keywords work as well
   d0 = %{name: "dave", posts: [1,2,3]}  
-  doc0 = d0 |> Document.save
+  d0 |> Document.save
+
 ```
 
