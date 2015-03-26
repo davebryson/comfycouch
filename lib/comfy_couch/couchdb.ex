@@ -1,8 +1,8 @@
 
 defmodule ComfyCouch.Couchdb do 
     @moduledoc """
-        GenServer wrapper around couchbeam client. Maintains start of 
-        current server and database
+        GenServer wrapper around couchbeam client. Maintains state of 
+        the current server and database
     """
     use GenServer
 

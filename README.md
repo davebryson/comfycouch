@@ -1,4 +1,4 @@
-Comfycouch
+ComfyCouch
 ==========
 
 A simple CouchDB client for Elixir.
